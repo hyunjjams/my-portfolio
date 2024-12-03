@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ede9d0;
+            color: #19461a;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Apple Garamond', serif;
+            font-style: italic;
+            color: #19461a;
+            margin: 10px 0;
+        }
+
+        a, button {
+            background-color: #19461a;
+            color: #ede9d0;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        a:hover, button:hover {
+            background-color: #486a47;
+        }
+
+        /* Layout */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #486a47;
+            color: #ede9d0;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+
+        section {
+            margin: 60px 0;
+            padding: 20px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #486a47;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        section p {
+            font-size: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #486a47;
+            color: #ede9d0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            background-color: #19461a;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #19461a;
+            color: #ede9d0;
+        }
+
+        footer a {
+            color: #ede9d0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #486a47;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <h1>My Portfolio</h1>
+        <p>Welcome to my personal website</p>
+        <button>Contact Me</button>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="container" id="about">
+    <div>
+        <h2>About Me</h2>
+	<img src="your-image.jpg" alt="Your Name" class="about-image">
+        <p>Add your bio, skills, and experience here.</p>
+    </div>
+</section>
+
+    <!-- Portfolio Section -->
+    <section class="container" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container" id="services">
+        <h2>Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creating user-friendly and responsive websites.</p>
+            </div>
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>Designing creative branding and promotional materials.</p>
+            </div>
+            <div class="card">
+                <h3>Consulting</h3>
+                <p>Helping businesses improve their digital strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="card">
+            <p>"This is a testimonial from a client." - Client Name</p>
+        </div>
+        <div class="card">
+            <p>"Another testimonial goes here." - Client Name</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="container" id="blog">
+        <h2>Blog</h2>
+        <div class="card">
+            <h3>Blog Post Title 1</h3>
+            <p>Summary of blog post 1.</p>
+        </div>
+        <div class="card">
+            <h3>Blog Post Title 2</h3>
+            <p>Summary of blog post 2.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or social media.</p>
+    </section>
+
+    <footer class="container">
+        <p>&copy; 2024 My Portfolio</p>
+        <p>
+            <a href="#about">About</a> |
+            <a href="#portfolio">Portfolio</a> |
+            <a href="#services">Services</a> |
+            <a href="#testimonials">Testimonials</a> |
+            <a href="#blog">Blog</a> |
+            <a href="#contact">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
